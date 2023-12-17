@@ -20,9 +20,9 @@ stages:          # List of stages for jobs, and their order of execution
   - build
   - test
   - deploy
-runs-on: self-hosted
-build-job:       # This job runs in the build stage, which runs first.
 
+build-job:       # This job runs in the build stage, which runs first.
+runs-on: self-hosted
   stage: build
   script:
     - echo "Compiling the code..."
